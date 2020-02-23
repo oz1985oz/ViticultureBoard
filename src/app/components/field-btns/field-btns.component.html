@@ -1,0 +1,14 @@
+<div class="wrapper">
+    <button mat-raised-button (click)="toggleSell()">{{field.sold ? 'Buy' : 'Sell'}}</button>
+    <div class="btns red">
+        <button mat-mini-fab color="primary" (click)="raise('red')">+</button>
+        <span>{{ field.red }}</span>
+        <button mat-mini-fab color="primary" (click)="decrease('red')">-</button>
+    </div>
+    <div class="btns white">
+        <button mat-mini-fab color="accent" (click)="raise('white')">+</button>
+        <span>{{ field.white }}</span>
+        <button mat-mini-fab color="accent" (click)="decrease('white')">-</button>
+    </div>
+    <button mat-raised-button>Harvest</button>
+</div>

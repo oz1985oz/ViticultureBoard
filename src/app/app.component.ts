@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Tree } from './models/tree';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Viticulture';
+  tree: Tree = new Tree();
 }

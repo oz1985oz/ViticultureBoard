@@ -1,0 +1,23 @@
+#background {
+    background-image: url('/assets/board.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 100vh;
+    position: relative;
+
+    app-field-btns:nth-child(1) {
+        position: absolute;
+        top: 4px;
+        left: 150px;
+    }
+    app-field-btns:nth-child(2) {
+        position: absolute;
+        top: 4px;
+        left: 380px;
+    }
+    app-field-btns:nth-child(3) {
+        position: absolute;
+        top: 4px;
+        left: 605px;
+    }
+}
