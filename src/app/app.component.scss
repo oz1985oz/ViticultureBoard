@@ -1,23 +1,121 @@
 #background {
-    background-image: url('/assets/board.png');
+    background-image: url('./../assets/board.png');
     background-repeat: no-repeat;
     background-size: auto;
-    height: 100vh;
+    height: 592px;
+    width: 900px;
     position: relative;
 
-    app-field-btns:nth-child(1) {
+    .newYear {
+        position: absolute;
+        top: 4px;
+        left: 850px;
+    }
+
+    app-field-btns:nth-of-type(1) {
         position: absolute;
         top: 4px;
         left: 150px;
     }
-    app-field-btns:nth-child(2) {
+    app-field-btns:nth-of-type(2) {
         position: absolute;
         top: 4px;
         left: 380px;
     }
-    app-field-btns:nth-child(3) {
+    app-field-btns:nth-of-type(3) {
         position: absolute;
         top: 4px;
         left: 605px;
+    }
+
+    .whiteGrapes:nth-of-type(1) {
+        position: absolute;
+        top: 400px;
+        left: 64px;
+    }
+    .whiteGrapes:nth-of-type(2) {
+        position: absolute;
+        top: 400px;
+        left: 106px;
+    }
+    .whiteGrapes:nth-of-type(3) {
+        position: absolute;
+        top: 400px;
+        left: 150px;
+    }
+    .whiteGrapes:nth-of-type(4) {
+        position: absolute;
+        top: 453px;
+        left: 104px;
+    }
+    .whiteGrapes:nth-of-type(5) {
+        position: absolute;
+        top: 453px;
+        left: 148px;
+    }
+    .whiteGrapes:nth-of-type(6) {
+        position: absolute;
+        top: 453px;
+        left: 192px;
+    }
+    .whiteGrapes:nth-of-type(7) {
+        position: absolute;
+        top: 507px;
+        left: 34px;
+    }
+    .whiteGrapes:nth-of-type(8) {
+        position: absolute;
+        top: 507px;
+        left: 76px;
+    }
+    .whiteGrapes:nth-of-type(9) {
+        position: absolute;
+        top: 507px;
+        left: 120px;
+    }
+    .redGrapes:nth-of-type(10) {
+        position: absolute;
+        top: 400px;
+        left: 315px;
+    }
+    .redGrapes:nth-of-type(11) {
+        position: absolute;
+        top: 400px;
+        left: 360px;
+    }
+    .redGrapes:nth-of-type(12) {
+        position: absolute;
+        top: 400px;
+        left: 404px;
+    }
+    .redGrapes:nth-of-type(13) {
+        position: absolute;
+        top: 453px;
+        left: 281px;
+    }
+    .redGrapes:nth-of-type(14) {
+        position: absolute;
+        top: 453px;
+        left: 325px;
+    }
+    .redGrapes:nth-of-type(15) {
+        position: absolute;
+        top: 453px;
+        left: 369px;
+    }
+    .redGrapes:nth-of-type(16) {
+        position: absolute;
+        top: 507px;
+        left: 302px;
+    }
+    .redGrapes:nth-of-type(17) {
+        position: absolute;
+        top: 507px;
+        left: 346px;
+    }
+    .redGrapes:nth-of-type(18) {
+        position: absolute;
+        top: 507px;
+        left: 390px;
     }
 }

@@ -1,6 +1,18 @@
 <div id="background">
+  <button class="newYear" mat-mini-fab color="warn"
+    (click)="yearPass()"
+  ><mat-icon>repeat_one</mat-icon></button>
   <app-field-btns
     *ngFor="let field of tree.fields"
     [field]="field"
+    (harvest)="onHarvest($event)"
   ></app-field-btns>
+  <app-dot class="whiteGrapes"
+    *ngFor="let grape of tree.whiteGrapes"
+    [grape]="grape"
+  ></app-dot>
+  <app-dot class="redGrapes"
+    *ngFor="let grape of tree.redGrapes"
+    [grape]="grape"
+  ></app-dot>
 </div>

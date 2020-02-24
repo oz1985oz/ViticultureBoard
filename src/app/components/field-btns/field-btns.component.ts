@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Field } from 'src/app/models/tree';
 
 @Component({
@@ -9,6 +9,7 @@ import { Field } from 'src/app/models/tree';
 export class FieldBtnsComponent implements OnInit {
 
   @Input() field: Field;
+  @Output() harvest = new EventEmitter();
 
   constructor() { }
 
@@ -22,8 +23,14 @@ export class FieldBtnsComponent implements OnInit {
     }
   }
 
+  doHarvest(): void {
+    this.harvest.emit(this.field);
+  }
+
   toggleSell() {
-    this.field.sold = !this.field.sold;
+    if (this.field.red === 0 && this.field.red === 0) {
+      this.field.sold = !this.field.sold;
+    }
   }
 
   ngOnInit() {

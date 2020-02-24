@@ -1,4 +1,8 @@
 <div class="wrapper">
+    <div *ngIf="field.sold" class="sold" (click)="toggleSell()">
+        <mat-icon>attach_money</mat-icon>
+        buy back!
+    </div>
     <button mat-raised-button (click)="toggleSell()">{{field.sold ? 'Buy' : 'Sell'}}</button>
     <div class="btns red">
         <button mat-mini-fab color="primary" (click)="raise('red')">+</button>
@@ -10,5 +14,5 @@
         <span>{{ field.white }}</span>
         <button mat-mini-fab color="accent" (click)="decrease('white')">-</button>
     </div>
-    <button mat-raised-button>Harvest</button>
+    <button mat-raised-button [disabled]="field.harvest" (click)="doHarvest()">Harvest</button>
 </div>
